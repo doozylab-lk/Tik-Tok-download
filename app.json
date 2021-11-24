@@ -1,5 +1,5 @@
 {
-  "name": "TikTokDL",
+  "name": "TikTok download",
   "description": "Telegram Bot to Download Tiktok video/audio.",
   "keywords": [
     "telegram",
@@ -7,9 +7,9 @@
     "video",
     "tiktok"
   ],
-  "success_url": "https://github.com/X-Gorn/TikTokDL",
-  "website": "https://github.com/X-Gorn",
-  "repository": "https://github.com/X-Gorn/TikTokDL",
+  "success_url": "https://github.com/doozylab-lk/Tik-Tok-download",
+  "website": "https://github.com/doozylab-lk",
+  "repository": "https://github.com/doozylab-lk/Tik-Tok-download",
   "env": {
     "BOT_TOKEN": {
       "description": "Your bot token, as a string.",
