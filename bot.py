@@ -9,56 +9,10 @@ APP_ID = int(os.environ['APP_ID'])
 BOT_TOKEN = os.environ['BOT_TOKEN']
 downloads = './downloads/{}/'
 
-from program import __version__
-from driver.filters import command, other_filters
-from pyrogram import Client, filters
-from pyrogram import __version__ as pyrover
-from pytgcalls import (__version__ as pytover)
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-
-__major__ = 0
-__minor__ = 2
-__micro__ = 1
-
-__python_version__ = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"
-
-
-START_TIME = datetime.utcnow()
-START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
-TIME_DURATION_UNITS = (
-    ("week", 60 * 60 * 24 * 7),
-    ("day", 60 * 60 * 24),
-    ("hour", 60 * 60),
-    ("min", 60),
-    ("sec", 1),
-)
-
-
-async def _human_time_duration(seconds):
-    if seconds == 0:
-        return "inf"
-    parts = []
-    for unit, div in TIME_DURATION_UNITS:
-        amount, seconds = divmod(int(seconds), div)
-        if amount > 0:
-            parts.append("{} {}{}".format(amount, unit, "" if amount == 1 else "s"))
-    return ", ".join(parts)
-
-
-@Client.on_message(
-    command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
-)
-async def start_(client: Client, message: Message):
-    await message.reply_text(
-        f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭(https://t.me/{BOT_USERNAME}) **Allows you to Tik Tok music and video Download!**
-
-""",
-        reply_markup=InlineKeyboardMarkup(
 #Button
 START_BUTTONS=[
     [
-        InlineKeyboardButton('Source', url='doozylab-lk/Tik-Tok-download'),
+        InlineKeyboardButton('Source', url='https://github.com/doozylab-lk/Tik-Tok-download'),
         InlineKeyboardButton('Project Channel', url='https://t.me/dhananjayarecord'),
     ],
     [InlineKeyboardButton('Author', url='https://t.me/doozylab_lk')],
@@ -95,7 +49,7 @@ async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
 # Start
 @xbot.on_message(filters.command('start') & filters.private)
 async def _start(bot, update):
-  await update.reply_text(f"I'm doozylab-lk!\nYou can download tiktok video/audio using this bot", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
+  await update.reply_text(f"I'm TikTokDL!\nYou can download tiktok video/audio using this bot", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
 
 # Downloader for tiktok
 @xbot.on_message(filters.regex(pattern='.*http.*') & filters.private)
