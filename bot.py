@@ -12,18 +12,18 @@ downloads = './downloads/{}/'
 # Button
 START_BUTTONS=[
     [
-        InlineKeyboardButton('Source', url='https://github.com/doozylab-lk/Tik-Tok-download'),
-        InlineKeyboardButton('Project Channel', url='https://t.me/dhananjayarecord'),
+        InlineKeyboardButton('SOURCE', url='https://github.com/doozylab-lk/Tik-Tok-download'),
+        InlineKeyboardButton('CHANNEL', url='https://t.me/dhananjayarecord'),
     ],
-    [InlineKeyboardButton('Author', url='https://t.me/doozylab_lk')],
+    [InlineKeyboardButton('OWNER', url='https://t.me/doozylab_lk')],
 ]
 
 DL_BUTTONS=[
     [
-        InlineKeyboardButton('No Watermark', callback_data='nowm'),
-        InlineKeyboardButton('Watermark', callback_data='wm'),
+        InlineKeyboardButton('ᴺᴼ ᵂᴬᵀᴱᴿᴹᴬᴿᴷ', callback_data='nowm'),
+        InlineKeyboardButton('ᵂᴬᵀᴱᴿᴹᴬᴿᴷ', callback_data='wm'),
     ],
-    [InlineKeyboardButton('Audio', callback_data='audio')],
+    [InlineKeyboardButton('ᴬᵁᴰᴵᴼ', callback_data='audio')],
 ]
 
 
@@ -49,7 +49,7 @@ async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
 # Start
 @xbot.on_message(filters.command('start') & filters.private)
 async def _start(bot, update):
-  await update.reply_text(f"I'm TikTokDL!\nYou can download tiktok video/audio using this bot", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
+  await update.reply_text(f"I'm TikTok downloader!\nYou can download tiktok video/audio using this bot", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
 
 # Downloader for tiktok
 @xbot.on_message(filters.regex(pattern='.*http.*') & filters.private)
