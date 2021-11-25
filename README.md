@@ -9,7 +9,7 @@ Tik tok Video download telegram bot
     <a href="https://t.me/doozylabTikTok_bot" target="blank"><img src="https://img.shields.io/badge/@demo_bot-30302f?style=flat&logo=telegram" /></a>
 
 
-<p align="center"><a href="https://t.me/doozylab_lk"><img src="https://telegra.ph/file/a381b439e2bf6c61703f9.png"></a></p>
+<p align="center"><a href="https://t.me/doozylabTikTok_bot"><img src="https://github.com/doozylab-lk/Tik-Tok-download/blob/main/unnamed.png"></a></p>
 <p align="center">
 
 ## Heroku Deployment
