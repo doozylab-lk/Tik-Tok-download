@@ -13,7 +13,7 @@ downloads = './downloads/{}/'
 START_BUTTONS=[
     [
         InlineKeyboardButton('SOURCE', url='https://github.com/doozylab-lk/Tik-Tok-download'),
-        InlineKeyboardButton('CHANNEL', url='https://t.me/dhananjayarecord'),
+        InlineKeyboardButton('CHANNEL', url='https://t.me/doozylab'),
     ],
     [InlineKeyboardButton('OWNER', url='https://t.me/doozylab_lk')],
 ]
