@@ -15,7 +15,7 @@ START_BUTTONS=[
         InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/doozylablk'),
         InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/doozylab'),
     ],
-    [InlineKeyboardButton('OWNER', url='https://t.me/doozylab_lk')],
+    [InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/doozylab_lk')],
 ]
 
 DL_BUTTONS=[
