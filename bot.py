@@ -12,8 +12,8 @@ downloads = './downloads/{}/'
 # Button
 START_BUTTONS=[
     [
-        InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/doozylablk'),
-        InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/doozylab'),
+        InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/TeamDLKsupport'),
+        InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/TeamDLK'),
     ],
     [InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/doozylab_lk')],
 ]
