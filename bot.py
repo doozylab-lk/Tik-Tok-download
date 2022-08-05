@@ -11,11 +11,8 @@ downloads = './downloads/{}/'
 
 # Button
 START_BUTTONS=[
-    [
-        InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/TeamDLKsupport'),
-        InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/TeamDLK'),
-    ],
-    [InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/doozylab_lk')],
+
+    [InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/error_404_not_found_errors_404')],
 ]
 
 DL_BUTTONS=[
@@ -49,7 +46,7 @@ async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
 # Start
 @xbot.on_message(filters.command('start') & filters.private)
 async def _start(bot, update):
-  await update.reply_text(f"ɪ'ᴍ ᴅᴏᴏᴢʏ TɪᴋTᴏᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ!\nʏᴏᴜ ᴄᴀɴ ᴅᴏᴡɴʟᴏᴀᴅ TɪᴋTᴏᴋ ᴠɪᴅᴇᴏ/ᴀᴜᴅɪᴏ ᴜsɪɴɢ ᴛʜɪs ʙᴏᴛ", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
+  await update.reply_text(f"ɪ'ᴍ 𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 TɪᴋTᴏᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ!\nʏᴏᴜ ᴄᴀɴ ᴅᴏᴡɴʟᴏᴀᴅ TɪᴋTᴏᴋ ᴠɪᴅᴇᴏ/ᴀᴜᴅɪᴏ ᴜsɪɴɢ ᴛʜɪs ʙᴏᴛ", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
 
 # Downloader for tiktok
 @xbot.on_message(filters.regex(pattern='.*http.*') & filters.private)
